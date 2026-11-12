@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple ToDo List Design</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="max-w-[1400px] h-[710px] mx-auto bg-white">
+    <div class="w-[750px] h-[710px] mx-auto bg-white">
+      <h2
+        class="font-bold text-[28px] mt-5 font-family-[Kanit] text-[#252525] text-center"
+      >
+        TODO LIST
+      </h2>
+      <div class="flex gap-2 mb-5 mt-2 mr-4 ml-4 text-black">
+        <input
+          name="search"
+          type="text"
+          placeholder="Search note..."
+          class="text-[#C3C1E5] border-1 border-[#6C63FF] rounded px-3 py-2 w-[595px] h-[38px]"
+        />
+        <div
+          class="bg-[#6C63FF] hover:bg-violet-600 text-white rounded px-2 flex items-center text-center"
+        >
+          <option class="w-[65px] h-[18px]">ALL</option>
+        </div>
+
+        <div class="bg-[#6C63FF] px-3 rounded flex hover:bg-violet-600">
+          <button>
+            <img src="./icon22.svg" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="max-w-xl mx-auto">
+        <div class="flex items-center gap-3 border-b border-violet-200 py-4">
+          <input type="checkbox" class="w-5 h-5 accent-violet-500" />
+          <span class="font-semibold text-sm flex-1">NOTE #1</span>
+          <button class="text-gray-400">
+            <img src="./penicon.svg" alt="" />
+          </button>
+          <button class="text-gray-400">
+            <img src="./trashicon.svg" alt="" />
+          </button>
+        </div>
+        <div class="flex items-center gap-3 border-b border-violet-200 py-4">
+          <input type="checkbox" checked class="w-5 h-5 accent-violet-500" />
+          <span class="font-semibold text-sm text-gray-400 flex-1 line-through"
+            >NOTE #2</span
+          >
+          <button class="text-gray-400">
+            <img src="./penicon.svg" alt="" />
+          </button>
+          <button class="text-gray-400">
+            <img src="./trashicon.svg" alt="" />
+          </button>
+        </div>
+        <div class="flex items-center gap-3 border-b border-violet-200 py-4">
+          <input
+            type="checkbox"
+            class="w-5 h-5 accent-violet-500 line-through"
+          />
+          <span class="font-semibold text-sm flex-1">NOTE #3</span>
+          <button class="text-gray-400">
+            <img src="./penicon.svg" alt="" />
+          </button>
+          <button class="text-gray-400">
+            <img src="./trashicon.svg" alt="" />
+          </button>
+        </div>
+      </div>
+      <button
+        class="absolute bottom-6 right-[20%] bg-violet-500 hover:bg-violet-600 text-white w-12 h-12 rounded-full text-3xl shadow-lg flex items-center justify-center"
+      >
+        <img src="./plusicon.png" alt="" />
+      </button>
+    </div>
+  </body>
+</html>
